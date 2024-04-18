@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+}
+
+
+h1 {
+  text-align: center; /* Center the text horizontally */
+}
+/* App component styles */
+.App {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ProductPage component styles */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  flex: 0 0 calc(20% - 20px); /* Adjust width to fit 5 products horizontally with gap */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Add margin to the bottom of each product */
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.product p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.product button {
+  align-self: flex-end; /* Align button to the end of the container */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+/* Cart component styles */
+.Cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.Cart h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.Cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Cart li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+}
+
+/* Adjust styles for the remove button */
+.Cart button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+.Cart button:hover {
+  color: darkred;
+}
+
+/* New style for the price */
+.Cart .price,
+.Cart .total {
+  color: #666;
+}
+
+/* Bold font weight for the total */
+.Cart .total {
+  font-weight: bold;
+}
+
+/* Button styles */
+.remove-button,
+.checkout-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover,
+.checkout-button:hover {
+  background-color: #0056b3;
+}
+
+.checkout-button {
+  width: 100%;
+}
