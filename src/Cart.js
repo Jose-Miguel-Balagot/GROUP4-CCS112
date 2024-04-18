@@ -50,3 +50,4 @@ function Cart({ cartItems, removeFromCart, emptyCart }) {
 }
 
 export default Cart;
+
