@@ -23,11 +23,13 @@ function ProductPage() {
   };
 
   const removeFromCart = (index) => {
-    // Implement remove from cart functionality
+    const updatedCart = [...cartItems];
+    updatedCart.splice(index, 1);
+    setCartItems(updatedCart);
   };
 
   const emptyCart = () => {
-    setCartItems([]); // Clear the cart by setting cartItems to an empty array
+    setCartItems([]);
   };
 
   return (
